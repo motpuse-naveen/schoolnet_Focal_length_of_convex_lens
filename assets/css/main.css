@@ -1,0 +1,631 @@
+/*global css starts*/
+
+* {
+  outline: none;
+}
+
+@font-face {
+  font-family: 'Green';
+  src: local('fonts/118_MEIRYO.ttf'), local('fonts/118_MEIRYO.ttf'), url('fonts/118_MEIRYO.ttf');
+}
+
+@font-face {
+  font-family: 'Green1';
+  src: local('fonts/151_MEIRYO.ttf');
+}
+
+@font-face {
+  font-family: 'italic';
+  src: local('fonts/1883_MEIRYO.ttf'), url('fonts/1883_MEIRYO.ttf');
+}
+
+@font-face {
+  font-family: 'Trebuchet';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Trebuchet MS'), url('fonts/trebuc.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Md BT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('fonts/214_Futura Md BT.ttf'), url('fonts/214_Futura Md BT.ttf');
+}
+
+@font-face {
+  font-family: 'Futura-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura-Medium'), url('fonts/futura_md_bt_bold.ttf') format('TrueType');
+}
+
+@font-face {
+  font-family: 'ArialBold';
+  src: local('fonts/6_Arial.ttf'), url('fonts/6_Arial.ttf');
+}
+
+@font-face {
+  font-family: 'Digital';
+  src: local('fonts/digital-7.ttf'), url('fonts/digital-7.ttf');
+}
+
+html, body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #d0cccc;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: auto;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+/*global css ends*/
+
+#bk6ch15ss2 {
+  position: absolute;
+  width: 996px;
+  height: 680px;
+  /* background: url('../images/89.png'); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background: white;
+}
+
+#topmenubar {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: url(../images/1338.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+#logo {
+  position: absolute;
+  width: 108px;
+  height: 18px;
+  padding: 5px;
+  top: 6px;
+  right: 39px;
+  background: white;
+}
+
+#logoImg {
+  position: absolute;
+  width: 91%;
+  /* height: 100%; */
+}
+
+#closeBtn {
+  position: absolute;
+  width: 30px;
+  height: 37px;
+  left: 962px;
+  cursor: pointer;
+}
+
+.closeBtn1 {
+  position: absolute;
+  top: 28px;
+  left: 1px;
+  color: white;
+  font-size: 10px;
+  font-family: sans-serif;
+  pointer-events: none;
+}
+
+.closeImg {
+  position: absolute;
+  width: 24px;
+  height: 25px;
+  top: 2px;
+  left: 2px;
+  background: url(../images/closeB.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#closeBtn:hover .closeImg {
+  background: url(../images/closeA.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#closeBtn:hover .closeBtn1 {
+  color: red;
+}
+
+#topmenubar2 {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  /* background: url(../images/3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  left: 0;
+  top: 40px;
+  z-index: 100;
+  /* box-shadow: 0 8px 6px -7px #939191; */
+}
+
+#contentTittle {
+  position: absolute;
+  width: 65%;
+  height: 100%;
+}
+
+.titleName {
+  position: absolute;
+  top: -12px;
+  left: 7px;
+  font-size: 18px;
+  font-family: Arial;
+  letter-spacing: 0.7px;
+  color: #000033;
+  font-weight: bold;
+}
+
+#downmenubar {
+  position: absolute;
+  width: 100%;
+  height: 31px;
+  bottom: 0px;
+  left: 0;
+  z-index: 200;
+  background: #ccc;
+  /* background: url(../images/1347.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+}
+
+.copyRight {
+  position: absolute;
+  bottom: -4px;
+  font-family: Arial;
+  font-size: 12px;
+  right: 5px;
+}
+
+.Slides {
+  position: absolute;
+  width: 996px;
+  height: 650px;
+  display: none;
+}
+
+#slide1Content {
+  width: 99.7%;
+  height: 89%;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+}
+
+.activityContainer {
+  position: absolute;
+  width: 72%;
+  height: 417px;
+  top: 1px;
+  left: 1px;
+  overflow: hidden;
+}
+
+.convexLensDiv {
+  position: absolute;
+  width: 1202px;
+  height: 526px;
+  top: 40px;
+  left: -326px;
+  background: url(../images/main0001.png0002_v2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.movingpaper {
+  position: absolute;
+  width: 102px;
+  height: 187 px;
+  top: 8px;
+  left: 201px;
+}
+
+.movingpaperInner {
+  position: relative;
+  width: 102px;
+  height: 187px;
+  background: url(../images/paper1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: -164px;
+  left: -39px;
+}
+
+.movingLens {
+  position: absolute;
+  width: 99px;
+  height: 220px;
+  top: 53px;
+  left: 359px;
+}
+
+.movingLensInner {
+  position: relative;
+  background: url(../images/lense10001.png  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 99px;
+  height: 220px;
+  top: -175px;
+  left: -44px;
+}
+
+.colorArrow {
+  position: absolute;
+  width: 46px;
+  height: 95px;
+  top: 44px;
+  left: 222px;
+  background: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.contentContainer {
+  position: absolute;
+  width: 73%;
+  height: 170px;
+  top: 370px;
+  left: 0px;
+  border-bottom-left-radius: 30px;
+  background: url(../images/content.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.contentInsideContainer {
+  position: absolute;
+  width: 100%;
+  height: 110px;
+  top: 0px;
+  left: 0px;
+}
+
+.distanceContainer {
+  position: absolute;
+  width: 199px;
+  height: 77px;
+  top: 10px;
+  left: 25px;
+  background: url(../images/Symbol-30001.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.screenDistanceText {
+  position: absolute;
+  top: 50px;
+  left: 75px;
+  font-size: 13px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #000000;
+}
+
+.objectDistanceText {
+  position: absolute;
+  top: 50px;
+  left: 160px;
+  font-size: 13px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #000000;
+}
+
+.screenDistanceTxt {
+  position: absolute;
+  width: 78px;
+  top: 78px;
+  left: 48px;
+  font-size: 10px;
+  font-family: 'Trebuchet';
+  font-weight: bold;
+  color: #505051;
+}
+
+.objectDistanceTxt {
+  position: absolute;
+  width: 78px;
+  top: 78px;
+  left: 133px;
+  font-size: 10px;
+  font-family: 'Trebuchet';
+  font-weight: bold;
+  color: #505051;
+}
+
+.paperLeftArrow {
+  position: absolute;
+  width: 47px;
+  height: 33px;
+  top: 20px;
+  left: 300px;
+  cursor: pointer;
+  background: url(../images/arrro_btn1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.paperDiv {
+  position: absolute;
+  width: 28px;
+  height: 57px;
+  top: 12px;
+  left: 354.5px;
+  background: url(../images/paper12-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.paperRightArrow {
+  position: absolute;
+  width: 47px;
+  height: 33px;
+  top: 20px;
+  left: 390px;
+  cursor: pointer;
+  background: url(../images/arrro_btn.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.lensLeftArrow {
+  position: absolute;
+  width: 47px;
+  height: 33px;
+  top: 20px;
+  left: 490px;
+  cursor: pointer;
+  background: url(../images/arrro_btn1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.lensDiv {
+  position: absolute;
+  width: 28px;
+  height: 57px;
+  top: 12px;
+  left: 544px;
+  background: url(../images/lense10001.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.lensRightArrow {
+  position: absolute;
+  width: 47px;
+  height: 33px;
+  top: 20px;
+  left: 582px;
+  cursor: pointer;
+  background: url(../images/arrro_btn.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.instructionsText {
+  position: absolute;
+  width: 405px;
+  top: 67px;
+  left: 292px;
+  font-size: 12px;
+  font-family: 'Trebuchet';
+  font-weight: bold;
+  color: #505051;
+  /* opacity: 0.7; */
+}
+
+.calculatorDiv {
+  position: absolute;
+  width: 128px;
+  height: 35px;
+  bottom: 6px;
+  left: 34px;
+  cursor: pointer;
+  background: url(../images/calculate.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.workSheetContainer {
+  position: absolute;
+  width: 270px;
+  height: 94%;
+  top: 40px;
+  right: -2px;
+  background-color: #F0F0F0;
+  z-index: 999;
+}
+
+.worksheetTitle {
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  font-size: 13px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #000000;
+}
+
+.workSheetDiv {
+  position: absolute;
+  width: 69px;
+  height: 59px;
+  top: 52px;
+  left: 101px;
+  background: url(../images/worksheet.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.workSheetDiv:hover {
+  position: absolute;
+  width: 69px;
+  height: 59px;
+  top: 52px;
+  left: 101px;
+  background: url(../images/worksheethover.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.workSheetContent {
+  position: absolute;
+  width: 258px;
+  height: 456px;
+  top: 122px;
+  left: 5px;
+  border: 1px solid black;
+  overflow-y: scroll;
+}
+
+.workSheetText {
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  font-size: 13px;
+  font-family: Arial;
+  line-height: 17px;
+  /* font-weight: bold; */
+  /* color: #292828; */
+  color: #000033;
+}
+
+b {
+  color: black;
+}
+
+.CalcDragHeader {
+  position: absolute;
+  width: 450px;
+  height: 33px;
+  top: 41px;
+  left: 160px;
+  z-index: 1001;
+  cursor: pointer;
+  display: none;
+}
+
+.calculationsDiv {
+  position: absolute;
+  width: 459px;
+  height: 562px;
+  top: 34px;
+  left: 159px;
+  z-index: 1000;
+  background: url(../images/calDis_mc0001.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+.calculationsContent {
+  position: absolute;
+  width: 98%;
+  height: 518px;
+  top: 32px;
+  left: 6px;
+}
+
+.calculationsText {
+  position: absolute;
+  top: 0px;
+  left: 6px;
+  font-size: 12px;
+  font-family: 'Trebuchet';
+  line-height: 23px;
+  color: #333333c6;
+}
+
+.colorbrown {
+  color: #911010;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.calculationClose {
+  position: absolute;
+  top: 8px;
+  right: 1px;
+  width: 12px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.repeatDiv {
+  position: absolute;
+  width: 79px;
+  height: 30px;
+  top: 114px;
+  left: 305px;
+  background: url(../images/reset2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.repeatText {
+  position: absolute;
+  width: 325px;
+  top: 124px;
+  left: 385px;
+  font-size: 11px;
+  font-weight: bold;
+  /* letter-spacing: 0.6px; */
+  font-family: 'Trebuchet';
+  color: #505051;
+  pointer-events: none;
+}
+
+.repeatTxt {
+  position: absolute;
+  top: 121.5px;
+  left: 318px;
+  font-size: 14px;
+  font-weight: Bold;
+  letter-spacing: 0.7px;
+  font-family: 'Futura-Medium';
+  color: #333333;
+  pointer-events: none;
+}
+
+.projector {
+  position: absolute;
+  /* border: 1px solid; */
+  width: 10px;
+  height: 10px;
+  top: 230px;
+  left: 628px;
+}
+
+.flame_mc {
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  top: 34.5%;
+  left: 38%;
+  background: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}

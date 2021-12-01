@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title></title>
+   <link rel="stylesheet" href="assets/jslib/normalize_5.0.css">
+   <link rel="stylesheet" href="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.min.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+   <script src="assets/json/main.json"></script>
+   <script src="assets/jslib/jquery_3.1.1/jquery_3.1.1.min.js"></script>
+   <script src="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.js"></script>
+   <script src="assets/jslib/jquery-ui-touch/jquery.ui.touch.js"></script>
+   <script src="assets/jslib/reSize_1.0/resize.js"></script>
+
+</head>
+
+<body>
+   <div id="bk6ch15ss2" class='conatiner' data-attr='continues' tabindex="0">
+      <script type="text/javascript">
+         (function ($) {
+            game_resize_function("#bk6ch15ss2");
+         })(jQuery);
+      </script>
+      <div id="topmenubar">
+         <div id="logo">
+            <img id="logoImg" src="assets/images/343.png">
+         </div>
+         <div id="closeBtn">
+            <div class="closeBtn1">Close</div>
+            <div class="closeImg"></div>
+         </div>
+
+      </div>
+      <div id="topmenubar2">
+         <div id="contentTittle">
+            <p class="titleName">Focal Length of Convex Lens
+            </p>
+         </div>
+      </div>
+
+
+      <!-- slides -->
+      <div class="slideconatiner">
+         <div class='Slides'>
+            <div id="slide1Content">
+               <div class="activityContainer">
+                  <div class="convexLensDiv"></div>
+                  <div class="movingpaper">
+                     <div class="movingpaperInner">
+                        <div class="flame_mc"></div>
+                     </div>
+                  </div>
+                  <div class="movingLens">
+                     <div class="movingLensInner"></div>
+                  </div>
+                  <!-- <div class="colorArrow"></div> -->
+                  <div class="projector"></div>
+               </div>
+
+
+               <div class="contentContainer">
+                  <div class="distanceContainer"></div>
+                  <div class="screenDistanceTxt">Screen Distance</div>
+                  <div class="objectDistanceTxt">Object Distance</div>
+                  <span class="screenDistanceText">305</span>
+                  <span class="objectDistanceText">178</span>
+                  <div class="paperLeftArrow"></div>
+                  <div class="paperDiv"> </div>
+                  <div class="paperRightArrow"> </div>
+                  <div class="lensLeftArrow"></div>
+                  <div class="lensDiv"> </div>
+                  <div class="lensRightArrow"> </div>
+                  <p class="instructionsText">Move the screen or the lens till you get a sharp image on the screen</p>
+                  <div class="calculatorDiv"></div>
+                  <div class="repeatDiv"></div>
+                  <span class="repeatTxt">REPEAT</span>
+                  <span class="repeatText">(click to repeat experiment with a different focal length)</span>
+               </div>
+
+            </div>
+            <div class="workSheetContainer">
+               <p class="worksheetTitle">Use the worksheet provided to you, to enter readings of the experiment.</p>
+               <div class="workSheetDiv" onclick="OpenWord()">
+                  <a id="MyLink" style="display:none"></a>
+               </div>
+               <input id="file-input" type="file" name="name" style="display: none;" />
+               <div class="workSheetContent">
+                  <p class="workSheetText">
+                     <b>Aim:</b> To determine the focal length of a
+                     convex lens.<br><br>
+                     <b>Apparatus:</b><br>
+                     Lenses of various focal lengths<br><br>
+                     Optical bench<br><br>
+                     Screen<br><br>
+                     Light box<br><br>
+                     <b>Procedure:</b><br>Fix the convex lens in the holder and
+                     place it securely on the optical bench.<br><br>
+                     Switch on the light box.<br><br>
+                     Move the screen (and the lens, if required) until you get a sharp image of<br> the illuminated cut-out in the light box.<br><br>
+                     Record the different distances, namely
+                     the object distance and the screen
+                     distance.<br><br>
+                     Calculate the focal length of the convex
+                     lens from the given equation.<br><br>
+                     Repeat the experiment with a lens of
+                     different focal length.
+                     <br/> 
+                     <br/> 
+                     <br/> 
+                  </p>
+
+               </div>
+               <p class="copyRight">© 2019, Schoolnet India Limited</p>
+            </div>
+            
+            <div class="CalcDragHeader">
+               <div class="calculationClose"></div>
+            </div>
+
+            <div class="calculationsDiv">
+               <div class="calculationsContent">
+                  <span class="calculationsText">
+
+                     <p style="line-height: 15px;margin-top: 22px;">Note: The following calculations are applicable only when you see a sharp inverted image of the
+                        object on the moveable screen.</p>
+
+                     <p>Object distance from the lens, So =<span class="colorbrown calcText1">173</span>&nbsp;&nbsp;&nbsp; units
+
+                     <p>Object height, Ho =<span class="colorbrown">30</span>&nbsp;&nbsp;&nbsp;&nbsp; units
+
+                     <p>Screen distance from the <b style="opacity: 0.7;">lens</b> when the <span class="colorbrown">image is sharp</span>, Si =<span
+                           class="colorbrown calcText3">117.57</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;units
+
+                     <p>Focal length, f, is given by the equation:
+
+                     <p>1/f = 1/So + 1/Si
+
+                     <p>Therefore,</p>
+
+                     <p>Focal length, f = ( So x Si ) / ( So + Si ) =<br>
+                        (<span class="colorbrown calcText1">173&nbsp;&nbsp;&nbsp;</span>&nbsp; x <span
+                           class="colorbrown calcText3">117.57&nbsp;&nbsp;</span> ) / ( <span
+                           class="colorbrown calcText1">173&nbsp;&nbsp;&nbsp;</span>&nbsp;+ <span
+                           class="colorbrown calcText3">117.57&nbsp;&nbsp;</span> )</p>
+
+                     <p>Focal length, f = <span class="colorbrown calcText2">70</span>&nbsp;&nbsp;&nbsp;units</p>
+
+                     <p>Image Height, Hi:</p>
+
+                     <p>So/Ho = Si/Hi</p>
+
+                     <p>Therefore, Hi = (Ho/So) x Si = (<span class="colorbrown">30&nbsp;</span> / <span
+                           class="colorbrown calcText1">173&nbsp;&nbsp;&nbsp;</span> )&nbsp; x <span class="colorbrown calcText3">117.57</span>
+                     </p>
+
+                     <p>Image height, Hi = <span class="colorbrown calcText4">20.39&nbsp;&nbsp;&nbsp;</span>&nbsp; units</p>
+                  </span>
+               </div>
+               <div class="calculationClose"></div>
+            </div>
+         </div>
+      </div>
+
+
+      <div id="downmenubar">
+         <!-- <p class="copyRight">© 2019, Schoolnet India Limited</p> -->
+      </div>
+   </div>
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
