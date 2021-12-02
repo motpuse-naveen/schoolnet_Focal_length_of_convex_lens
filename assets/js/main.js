@@ -9,6 +9,8 @@ var slideaudio = new Audio('');
 var dist;
 var dist1;
 var u;
+var v, s, w, scaleF, distDiff;
+var v1;
 
 var moveSpeed = 1;
 
@@ -283,21 +285,28 @@ function getFocalLn() {
 
 
 function scaleFlame() {
+  //debugger;
   posLeft0 = $(movieArray[0]).position().left - $(".projector").position().left;
-  posLeft1 = $(movieArray[1]).position().left - $(".projector").position().left+2;
-  u = Math.round((getInclinedX(5.85, posLeft1) * (-1)));
+  posLeft1 = $(movieArray[1]).position().left - $(".projector").position().left;
   s = Math.round((getInclinedX(5.85, posLeft0) * (-1)));
-  w = (s - u);
-  scaleF = (w / u);
+  u = Math.round((getInclinedX(5.85, posLeft1) * (-1)));
+  w = (s - u) + 3;
+  var w1 = (s - u);
+  scaleF = (w1 / u);
   $(movieArray[0]).children().children('.flame_mc').css('transform', 'scale(' + scaleF + ')');
   v = (u * focalLth) / (u - focalLth);
+  //v1 = ((u + 2) * focalLth) / ((u + 2) - focalLth);
   distDiff = Math.abs(v - w);
+  console.log(distDiff);
   if (distDiff < 3) {
-    blurValue = (distDiff / v) * 30;
+    blurValue = Math.abs((v.toFixed(0) - w.toFixed(0))) / v * 30;
   }
   else {
-    blurValue = (distDiff / v) * 100;
+    blurValue = Math.abs((v.toFixed(0) - w.toFixed(0))) / v * 100;
   }
+  //var blurVal2 = Math.abs((v.toFixed(0) - w.toFixed(0))) / v * 100;
+  //console.log(v + ": " + w)
+  //console.log(blurVal1 + ": " + blurVal2)
   // //trace("BLURVALUE = " + blurValue);
   // //....to take care when U = Focal lth
   if (blurValue < 65) {
@@ -361,12 +370,12 @@ function getResolvedXandY(gradientValueDeg, myInclinedX) {
 }
 
 function calc() {
-  let sis = v.toFixed(2);
+  let sis = Number(v.toFixed(2));
   let hi = (30 / dist1) * (sis);
   $('.calcText1').text($('.objectDistanceText').text());
   $('.calcText2').text(focalLth);
-  $('.calcText3').text(sis);
-  $('.calcText4').text(hi.toFixed(2));
+  $('.calcText3').text(Number(sis));
+  $('.calcText4').text(Number(hi.toFixed(2)));
 }
 
 $('.repeatDiv').on('click', function () {
